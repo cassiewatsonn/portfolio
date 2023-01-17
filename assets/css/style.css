@@ -10,8 +10,8 @@ body {
 
 header{ 
     background-color: #c5eac4;
-    padding: 20px 10px;
-    overflow:hidden
+    padding: 10px 10px;
+    overflow:auto;
 }
 
 /*Main Title on Navigation Bar: Cassandra Watson*/
@@ -87,8 +87,7 @@ a:hover{
 
 .cassiephoto{
     float:center;
-    height: 37.5rem;
-    width:37.5rem; 
+
 
 
    
@@ -124,32 +123,23 @@ a:hover{
 /*Refactoring HTML &CSS*/
 .center{
 
-    background-color: #c5eac4;
+    background-image: url(green2.png);
+    /*#c5eac4;*/
     padding:32px 0;
     margin-top:2rem; 
     text-align: center;
     margin-bottom: 16px;
-    width: 100%;
+    width: 95%;
     padding: 16px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 15px 2px;
 }
- 
-.bottom{
-    background-color: #c5eac4;
-    padding:32px 0;
-    margin-top:2rem; 
-    text-align: center;
-    margin-bottom: 16px;
-    width: 45%;
-    padding: 16px;
+.center:hover{
+  /* background-color: #c5eac4;*/
+    font-style: italic;
+    border-radius: 15px;
+    text-decoration: underline;
 }
-
-    /*display:flex;
-    flex-direction: column;
-    justify-content:flex-end;
-    align-self: center;
-    height:auto;
-}*/
-
 .photo1{
     width:65%;
     height:60%;
@@ -161,13 +151,38 @@ a:hover{
     justify-content: center;
 }
 
+ 
+/*JavaScript and Node.js*/
+.bottom{
+    background-color: #c5eac4;
+    padding:32px 0;
+    margin-top:2rem; 
+    text-align: center;
+    margin-bottom: 16px;
+    width: 45%;
+    padding: 16px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 15px 2px;
+}
 
+    /*display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-self: center;
+    height:auto;
+}*/
+
+.bottom:hover{
+      font-style: italic;
+      text-decoration: underline;
+    
+  }
 
 /*Footer*/
 footer{ 
     padding: 20px 10px;
     background-color: #c5eac4;
-    overflow:hidden
+    overflow:auto;
 }
 
 /*Footer: Contact Info- Phone, Email, GitHub, Twitter, Spotify*/
