@@ -1,5 +1,7 @@
 # <portfolio>
 
+# Portfolio
+
 ## Description
 
 Personal Portfolio Page for Cassandra Watson. This project is built to show Cassandra's skills, experience, accomplishments and attribute to users. The users of this page will be prospect employers. The main goal is to highlight Cassandra's best work.
@@ -14,7 +16,7 @@ To use this Horizon Page, you can review each tab that will bring you to more in
 
 When I load the portfolio, then I am presented with Cassandra's name, a recent photo, and links to sections about her, her work, and how to contact her. When I click one of the links in the navigation, then the UI scrolls to the corresponding section. When I click on the link to the section about her work, then the UI scrolls to a section with titled images of Cassandra's applications. When I am presented with her first application, then that application's image should be larger in size than the others.When I click on the images of the applications, then I am taken to that deployed application. When I resize the page or view the site on various screens and devices, then I am presented with a responsive layout that adapts to my viewport. 
 
-## ![Ms.Watson](assets/images/)
+## ![Ms.Watson](assets/images/website.png)
 
 ## Link 
 https://

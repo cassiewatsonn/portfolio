@@ -1,12 +1,6 @@
-/** {
-
-}*/
-
 body {
-    background-color: lightgrey;
-
+    background-color: skyblue;
 }
-
 
 header{ 
     display: flex;
@@ -14,19 +8,15 @@ header{
     padding: 10px 10px;
     overflow:auto;
     justify-content: space-between;
-    
 }
 
 /*Main Title on Navigation Bar: Cassandra Watson*/
 header h1{
-    /* position:sticky;
-    float: left; */
     color: black;
     padding:25px;
     font-size: 40px;
     background-color: azure;
     border-radius: 15px;
-    
 }
 
 /*Top Navigation Bar: About Me, Work, Contact Me, Resume*/
@@ -40,9 +30,8 @@ header h1{
     padding: 2px 2px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 22px;
-
-
 }
+
 /*Take away bullet points on <li> for navigation bar*/
 ul {
     display:flex;
@@ -51,16 +40,12 @@ ul {
     margin: 0;
     padding: 0;
   }
-/*Line up header horizontally (navigation bar)*/
-li{
-    
-
-}
 
 /*Spacing between header nav links*/
 a{ 
     padding: 8px;
 }
+
 /*Hover Function on Header Nav Links*/
 a:hover{
     background-color: azure;
@@ -71,66 +56,42 @@ a:hover{
 /*Hi Im Cassie*/
 .intro{
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     gap: 2.5rem;
     max-width: 68.75rem;
     margin:auto;
     font-size: 20px;
     font-style: italic;
-    
-    /*float:left;
-    padding-top: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: 35px;
-    font-style: italic;*/
-   
-
 }
 
 .cassiephoto{
-    float:center;
-
-    /*height: 37.5rem;
-    width:37.5rem; */
-
+   display:flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
 }
 
 /*AboutMe*/
-
 .biotitle{
     font-size: 30px;
     font-style: italic;
-    /*float:left;
-    text-decoration: underline;
-    font-style: italic;
-    font-size: 30px;
-    padding-left: 14%;
-    padding-right: 14%;
-    padding-bottom: 40%;*/
 }
 
 .biotext{
+    background-color: #c5eac4;
     width:50%;
     padding:2px; 
     border-radius: 6px;
     box-shadow: 0px 2px 15px 2px;
     font-size: 20px;
-    
-    /*font-size: 25px; 
-    padding-left: 25%;*/
-    
 }
 
 /*Refactoring HTML &CSS*/
 .center{
-
     background-image: url("../images/cloud.png");
     background-repeat: no-repeat;
     background-size: cover;
-
-    /*#c5eac4;*/
     padding:32px 0;
     margin-top:2rem; 
     text-align: center;
@@ -141,12 +102,13 @@ a:hover{
     border-radius: 15px;
     box-shadow: 0px 2px 15px 2px;
 }
+
 .center:hover{
-  /* background-color: #c5eac4;*/
     font-style: italic;
     border-radius: 15px;
     text-decoration: underline;
 }
+
 .photo1{
     width:65%;
     height:60%;
@@ -158,14 +120,17 @@ a:hover{
     justify-content: center;
 }
 
- .bottombox{
+/*JavaScript and Node.js Boxes*/
+.bottombox{
     display:flex;
     justify-content: space-between;
+    flex-wrap: wrap;
  }
 
-/*JavaScript and Node.js*/
 .bottom{
-    background-color: #c5eac4;
+    background-image: url("../images/plaidgreen.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding:32px 0;
     margin-top:2rem; 
     text-align: center;
@@ -176,41 +141,39 @@ a:hover{
     box-shadow: 0px 2px 15px 2px;
 }
 
-    /*display:flex;
-    flex-direction: column;
-    justify-content:flex-end;
-    align-self: center;
-    height:auto;
-}*/
-
 .bottom:hover{
       font-style: italic;
       text-decoration: underline;
-    
   }
 
 /*Footer*/
 footer{ 
-    padding: 20px 10px;
+    display: flex;
     background-color: #c5eac4;
+    padding: 10px 10px;
     overflow:auto;
+    justify-content: space-between; 
 }
 
-/*Footer: Contact Info- Phone, Email, GitHub, Twitter, Spotify*/
-footer li {
-   display:flex;
-    float:right; 
-    padding: 15px;
-    font-size: 22px;
-    margin-top: 55px;
-}
+/*Footer: Contact Info- Phone, Email, GitHub, Twitter*/
 footer h3{
     font-size: 40px;
     float:left; 
     padding: 30px;
-    
 }
 
+.footernav{
+    display:flex;
+    left:0;
+    z-index:1;
+    align-items: center;
+    justify-content:space-between;
+    padding: 2px 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+}
+
+/*Adjusts Width for smaller screen*/
 @media screen and (max-width:768px) {
     .navbar ul{
         display:block;
@@ -220,5 +183,11 @@ footer h3{
     }
     .bottombox .bottom{
         flex-basis: 100%;
+    }
+    .footernav ul{
+        display:block; 
+    }
+    .intro{
+        display: block;
     }
 }
